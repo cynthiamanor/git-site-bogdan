@@ -4,17 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Hello World</title>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/custom.css" />
 	</head>
 	<body class="text-light" onload="footerText()">
 		<div class="container-fluid p-0" id="page-wrapper">
-			<div class="container-fluid" id="nav-wrapper">
+			<div class="container-fluid bg-primary" id="nav-wrapper">
 				<div class="container">
 					<nav class="navbar navbar-expand-lg navbar-dark text-light">
 						<a class="navbar-brand" href="#">GIT SITE BOGDAN</a>
@@ -54,9 +49,11 @@
 				</div>
 			</div>
 			<!--END OF HEADING-->
-			<div class="container-fluid" id="bucket-wrapper-main">
+
+			<!--- BEGIN:  MAIN CONTENT AREA -->
+			<main class="container-fluid" id="bucket-wrapper-main">
 				<div class="container py-4 d-md-flex flex-row justify-content-center">
-					<div class="card text-white mb-3" style="max-width: 18rem">
+					<div class="card text-white bg-primary mb-3" >
 						<div class="card-header">Header</div>
 						<div class="card-body">
 							<h5 class="card-title">Dark card title</h5>
@@ -67,7 +64,7 @@
 						</div>
 					</div>
 
-					<div class="card text-white mb-3" style="max-width: 18rem">
+					<div class="card text-white bg-primary mb-3">
 						<div class="card-header">Header</div>
 						<div class="card-body">
 							<h5 class="card-title">Dark card title</h5>
@@ -78,7 +75,7 @@
 						</div>
 					</div>
 
-					<div class="card text-white mb-3" style="max-width: 18rem">
+					<div class="card text-white bg-primary mb-3">
 						<div class="card-header">Header</div>
 						<div class="card-body">
 							<h5 class="card-title">Dark card title</h5>
@@ -89,47 +86,52 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- FOOTER BUCKET-->
-			<div class="container-fluid py-5 px-0" id="footer-wrapper">
-				<div class="container d-md-flex flex-row justify-content-center">
-					<div class="footer-bucket">
-						<div class="list-group footer-nav">
-							<a href="#" class="list-group-item list-group-item-action"> Home </a>
-							<a href="#" class="list-group-item list-group-item-action">About</a>
-							<a href="#" class="list-group-item list-group-item-action">Contact</a>
+			</main>
+			<!--- END:  MAIN CONTENT AREA -->
+			<!-- FOOTER AREA-->
+			<footer class="container-fluid p-0 m-0">
+				<div class="container-fluid py-5 px-0" id="footer-bucket-wrapper">
+					<div class="container d-md-flex flex-row justify-content-center">
+						<div class="footer-bucket">
+							<div class="list-group footer-nav">
+								<a href="#" class="list-group-item list-group-item-action"> Home </a>
+								<a href="#" class="list-group-item list-group-item-action">About</a>
+								<a href="#" class="list-group-item list-group-item-action">Contact</a>
+							</div>
+						</div>
+
+						<div class="footer-bucket">
+							<p>
+								GIT SITE BOGDAN<br />
+								2121 Github Row <br />
+								Suite #97789<br />
+								Technology Towers<br />
+								Austin, TX 78701
+							</p>
+						</div>
+						<div class="footer-bucket">
+							<p>
+								ph: <a href="tel:123-456-7890">123-456-7890</a><br />
+								fax: 888-217-0010<br />
+								email: <a href="mailto">hi@gitsitebogdan.com</a>
+							</p>
+							<p id="copyright"></p>
 						</div>
 					</div>
-
-					<div class="footer-bucket">
-						<p>
-							GIT SITE BOGDAN<br />
-							2121 Github Row <br />
-							Suite #97789<br />
-							Technology Towers<br />
-							Austin, TX 78701
-						</p>
-					</div>
-					<div class="footer-bucket">
-						<p>
-							ph: <a href="tel:123-456-7890">123-456-7890</a><br />
-							fax: 888-217-0010<br />
-							email: <a href="mailto">hi@gitsitebogdan.com</a>
-						</p>
-						<p id="copyright"></p>
+				</div>
+				<!-- SOCIAL MEDIA-->
+				<div class="container-fluid" id="social-media-wrapper">
+					<div class="container social d-flex flex-row justify-content-center">
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-facebook-square"></i></a>
+						<a href="#"><i class="fab fa-instagram-square"></i></a>
+						<a href="#"><i class="fab fa-linkedin"></i></a>
 					</div>
 				</div>
-			</div>
+			</footer>
 		</div>
+		<!-- end of page wrapper-->
 
-		<div class="container-fluid">
-			<div class="container social d-flex flex-row justify-content-center">
-				<a href="#"><i class="fab fa-twitter"></i></a>
-				<a href="#"><i class="fab fa-facebook-square"></i></a>
-				<a href="#"><i class="fab fa-instagram-square"></i></a>
-				<a href="#"><i class="fab fa-linkedin"></i></a>
-			</div>
-		</div>
 		<!-- jQuery and JS bundle w/ Popper.js -->
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
