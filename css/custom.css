@@ -10,6 +10,9 @@ h2 {
 #page-wrapper {
   max-width: 3260px; }
 
+#nav-wrapper .navbar-dark .navbar-nav .nav-link {
+  color: white; }
+
 #header-wrapper {
   height: 600px;
   background-image: url(/img/shutterstock_1576972363-psd.jpg);
@@ -19,6 +22,13 @@ h2 {
     background-color: rgba(17, 3, 3, 0.9);
     width: 100%;
     height: 100%; }
+  #header-wrapper #header-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px; }
+    #header-wrapper #header-buttons .btn {
+      margin: 10px;
+      width: 145px; }
 
 #bucket-wrapper-main {
   background-color: #1a1a1a; }
@@ -28,7 +38,7 @@ h2 {
 
 footer #footer-bucket-wrapper {
   background-color: #111111; }
-  footer #footer-bucket-wrapper + a, footer #footer-bucket-wrapper a:link, footer #footer-bucket-wrapper p {
+  footer #footer-bucket-wrapper a, footer #footer-bucket-wrapper a:link, footer #footer-bucket-wrapper p {
     color: #bbbbbb; }
   footer #footer-bucket-wrapper .footer-bucket {
     min-width: 30%;
@@ -42,6 +52,15 @@ footer .social {
   padding-top: 1rem; }
   footer .social .fab {
     color: #999;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin: .75rem;
     padding: .5rem; }
+footer .developer {
+  margin-top: 25px; }
+  footer .developer p {
+    text-align: center; }
+  footer .developer a, footer .developer a:link, footer .developer p {
+    color: #505050;
+    font-size: .85rem; }
+  footer .developer a, footer .developer a:link {
+    text-decoration: underline; }
